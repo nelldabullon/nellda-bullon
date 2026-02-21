@@ -576,6 +576,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-bottom: 0.2rem;
   line-height: 1.3;
 }
+.timeline-link {
+  color: inherit;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.2s, color 0.2s;
+}
+.timeline-link:hover { color: var(--accent); border-color: var(--accent); }
 .timeline-location {
   font-size: 0.82rem;
   color: var(--ink-soft);
@@ -766,7 +772,89 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-top: 0.25rem;
 }
 
-/* ─── NAV CV BUTTON ─────────────────────────────────────────────────────────── */
+.nav-yes {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--accent) !important;
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+.nav-yes:hover { opacity: 0.7; }
+
+/* ─── YES FEATURE BLOCK ─────────────────────────────────────────────────────── */
+.yes-feature {
+  background: var(--sand);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 3.5rem 0;
+}
+.yes-feature-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.yes-feature-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+.yes-feature-logo {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.18;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+}
+.yes-feature-text .section-label { margin-bottom: 0.25rem; }
+.yes-feature-text h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.yes-feature-text p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 380px;
+}
+.yes-feature-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+.yes-feature-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.yes-feature-pills span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  background: var(--cream);
+}
+.yes-feature-btn { white-space: nowrap; }
+
+@media (max-width: 720px) {
+  .yes-feature-inner { flex-direction: column; align-items: flex-start; }
+  .yes-feature-right { align-items: flex-start; }
+}
 .nav-cv {
   display: inline-flex;
   align-items: center;

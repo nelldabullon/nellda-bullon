@@ -1,0 +1,204 @@
+/* ── YES SUBPAGE STYLES ─────────────────────────────────────────────────────── */
+
+/* Hero */
+.yes-hero {
+    position: relative;
+    padding: calc(var(--nav-h) + 5rem) 0 5rem;
+    overflow: hidden;
+  }
+  .yes-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--accent-pale) 0%, var(--cream) 60%, var(--warm-pale) 100%);
+    z-index: 0;
+  }
+  .yes-hero .container { position: relative; z-index: 1; }
+  .yes-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+    transition: color 0.2s;
+  }
+  .yes-back:hover { color: var(--accent); }
+  .yes-back svg { width: 16px; height: 16px; }
+  .yes-hero-content { max-width: 680px; }
+  .yes-logo {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+    opacity: 0.15;
+  }
+  .yes-hero-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+  }
+  .yes-tagline {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-family: var(--font-display);
+    line-height: 1.6;
+  }
+  
+  /* Philosophy */
+  .yes-philosophy { background: var(--cream); }
+  .yes-philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 5rem;
+    align-items: start;
+  }
+  .yes-philosophy-text p {
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.78;
+    margin-bottom: 1.2rem;
+  }
+  .yes-pillars { display: flex; flex-direction: column; gap: 1.5rem; }
+  .yes-pillar {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--sand);
+    transition: border-color 0.2s;
+  }
+  .yes-pillar:hover { border-color: var(--accent); }
+  .yes-pillar-icon {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  .yes-pillar h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+  .yes-pillar p {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  
+  /* Services */
+  .yes-services { background: var(--sand); }
+  .yes-service-block {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s;
+  }
+  .yes-service-block:hover { box-shadow: 0 6px 28px rgba(44,95,138,0.07); }
+  .yes-service-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .yes-service-icon {
+    width: 44px; height: 44px;
+    flex-shrink: 0;
+    color: var(--accent);
+    margin-top: 0.2rem;
+  }
+  .yes-service-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm);
+    margin-bottom: 0.3rem;
+  }
+  .yes-service-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .yes-service-lead {
+    font-size: 0.97rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .yes-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem 2rem;
+  }
+  .yes-list li {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    padding-left: 1.1rem;
+    position: relative;
+    line-height: 1.55;
+  }
+  .yes-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+  
+  /* CTA */
+  .yes-cta {
+    background: var(--accent);
+    padding: 5rem 0;
+  }
+  .yes-cta-inner {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .yes-cta-inner h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  .yes-cta-inner p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  .yes-cta-inner .btn-primary {
+    background: #fff;
+    color: var(--accent);
+  }
+  .yes-cta-inner .btn-primary:hover {
+    background: var(--sand);
+    transform: translateY(-1px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 860px) {
+    .yes-philosophy-grid { grid-template-columns: 1fr; }
+    .yes-list { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .yes-service-block { padding: 1.5rem; }
+    .yes-service-header { flex-direction: column; gap: 0.75rem; }
+  }
