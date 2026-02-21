@@ -6,6 +6,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('nb-theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 
+
 themeToggle.addEventListener('click', () => {
   const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
   html.setAttribute('data-theme', next);
@@ -16,7 +17,7 @@ themeToggle.addEventListener('click', () => {
 const langToggle = document.getElementById('lang-toggle');
 const langLabel  = document.getElementById('lang-label');
 
-let currentLang = localStorage.getItem('nb-lang') || 'es';
+let currentLang = localStorage.getItem('nb-lang') || 'en';
 html.setAttribute('data-lang', currentLang);
 html.setAttribute('lang', currentLang);
 langLabel.textContent = currentLang === 'es' ? 'EN' : 'ES';

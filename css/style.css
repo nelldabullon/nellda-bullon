@@ -766,6 +766,55 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-top: 0.25rem;
 }
 
+/* ─── NAV CV BUTTON ─────────────────────────────────────────────────────────── */
+.nav-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-soft) !important;
+  border: 1.5px solid var(--line);
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-cv:hover { border-color: var(--accent); color: var(--accent) !important; }
+
+/* ─── CV DOWNLOAD SECTION ───────────────────────────────────────────────────── */
+.cv-download {
+  background: var(--accent);
+  padding: 4rem 0;
+}
+.cv-download-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cv-download-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+.cv-download-text p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+}
+.cv-btn {
+  background: #fff !important;
+  color: var(--accent) !important;
+  white-space: nowrap;
+  gap: 0.6rem;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+}
+.cv-btn:hover { background: var(--sand) !important; transform: translateY(-1px); }
+.cv-btn svg { width: 18px; height: 18px; }
+
 /* ─── FOOTER ────────────────────────────────────────────────────────────────── */
 .footer {
   background: var(--ink);
